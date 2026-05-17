@@ -7,3 +7,4 @@ A collection of walkthroughs and solutions for Capture The Flag competitions, fo
 * [THCon](./)
 * [RAMunchers](./)
 * [NDIAS](./NDIAS.md)
+* [misc](./)
