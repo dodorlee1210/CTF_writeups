@@ -72,6 +72,8 @@ ___
        * https://www.dmv.ca.gov/portal/file/zoox_082322-pdf/
   * I thought if I searched with more detailed context, more information may exist: "menlo park toyota zoox rear-end crash"
       * I found an article that had a link to a document of the 2nd case.
+          * https://www.sfexaminer.com/news/transit/zoox-accident-in-san-francisco-prompts-federal-investigation/article_5181b648-1168-11ef-bb8b-efc51e196db0.html
+          * https://static.nhtsa.gov/odi/inv/2024/INOT-PE24015-12313P2.pdf
       * The 2nd case file was redacted, but had all necessary info the challenge required.
       * I copied and pasted to VIN, but apparently, the pasted version had a 0 automatically converted to an O. Took me a few minutes to figure out why the flag was incorrect XD.
 ### Flag
