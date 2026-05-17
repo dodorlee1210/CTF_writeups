@@ -14,10 +14,10 @@ I enjoyed these challenges quite a lot, because they were somehow related to eac
 * The link was an article posted by Zoox on its partnership with Resorts World Las Vegas.
 * The image was a picture of an entrance driveway.
 ### Solve
-1) Searched "Resorts World Las Vegas" on Google Maps; however, street view was limited to 2 entrance driveways.
+1) I searched "Resorts World Las Vegas" on Google Maps; however, street view was limited to 2 entrance driveways.
 <br>- I followed the street views for both driveways, but none of them had the same component as the image (a grey bar touching the pillars).
 
-2) Searched "Resorts World Las Vegas Zoox" on Google Maps.
+2) Then, I searched "Resorts World Las Vegas Zoox" on Google Maps.
 I noticed it actually gave me a location that was right at an entrance where a street view was not provided, so right clicked for coordinates
 ### Flag
 <details>
@@ -38,7 +38,7 @@ ___
 * Subject: Waymo AV striking a child in the area of a school
 * Summary: ... within 2 blocks of a Santa Monica, CA elementary school
 ### Solve
-* I Google searched "waymo av santa monica elementary" based on the observed data. Resulting AI overview said it was "reported as Grant Elementary."
+* I searched "waymo av santa monica elementary" based on the observed data. Resulting AI overview said it was "reported as Grant Elementary."
 * Now that I have a specific school name and region, I searched "grant elementary santa monica" on Google Maps, which gave me 1 location.
 * The pin was actually placed right in front of the crosswalk, so I right-cliked for coordinates.
 ### Flag
