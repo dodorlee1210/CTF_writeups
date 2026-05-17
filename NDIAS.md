@@ -8,7 +8,7 @@ I enjoyed these challenges quite a lot, because they were somehow related to eac
 <br> Flag format: flag{latitude_longitude}
 <br> Round down to the third decimal place and discard any digits after that.
 <br> Example: flag{35.628_139.744}
-<img width="341" height="201" alt="1748388387-four-people-waiting-for-a-zoox-robotaxi-at-resorts-world-las-vegas" src="https://github.com/user-attachments/assets/15c66282-c019-4d12-8b87-deeb694a4f23" />
+<img width="341" height="201" src="https://github.com/user-attachments/assets/15c66282-c019-4d12-8b87-deeb694a4f23" />
 
 ### Observation
 * The link was an article posted by Zoox on its partnership with Resorts World Las Vegas.
@@ -115,15 +115,15 @@ ___
     * Found a video: [The Future of Flight is Here | Joby Flies at Mt. Fuji
 ](https://www.youtube.com/watch?v=7rvvvEJpPig)
         * Last 15 seconds of video shows where it landed in wideshot/fullshot
-<img width="342" height="201" alt="스크린샷 2026-05-15 181433" src="https://github.com/user-attachments/assets/91d5ff2e-7868-4c2e-8d6a-f861fb707ec9" />
+<img width="342" height="201" src="https://github.com/user-attachments/assets/91d5ff2e-7868-4c2e-8d6a-f861fb707ec9" />
 
 * **Observation**
     * A white building in distance, 2 big asphalted area, a grandstand? (wasn't sure) in distance.
 * Looking at Fuji Speedway area on Google Maps in satellite mode, I figured out the structures were: a hotel and a grandstand.
 * I used mobile Google Maps on satellite mode to angle it to have the same view as the screenshot above.
 * While zooming out, a  unique circuit shape and two big ashphalted areas with a strip of grass in between near it caught my eye. It looked very similar to the one in the screenshot above.
-<img width="180" height="330" alt="1000033918" src="https://github.com/user-attachments/assets/28a97efd-4034-4bf4-ac82-86ff63d3b20e" />
-<img width="180" height="250" alt="1000033920" src="https://github.com/user-attachments/assets/f49c4d9d-4f6b-43fd-a095-db7207e825fb" />
+<img width="180" height="330" src="https://github.com/user-attachments/assets/28a97efd-4034-4bf4-ac82-86ff63d3b20e" />
+<img width="180" height="250" src="https://github.com/user-attachments/assets/f49c4d9d-4f6b-43fd-a095-db7207e825fb" />
 
 * On OpenStreetMap, I first changed the layer to standard, then located the spot based on the landscape I saw on Google Maps labeled P1.
 * To get the way id, I selected "query/?" and clicked on P1.
@@ -132,5 +132,5 @@ ___
 <details>
   <summary>Answer</summary>
   <b>flag{593469861}</b>
-  <br><br> <img width="958" height="534" alt="스크린샷 2026-05-15 183406" src="https://github.com/user-attachments/assets/6ec03794-d0aa-4e52-86bd-abe6089650ca" />
+  <br><br> <img width="958" height="534" src="https://github.com/user-attachments/assets/6ec03794-d0aa-4e52-86bd-abe6089650ca" />
 </details>
