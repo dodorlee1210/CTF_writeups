@@ -91,7 +91,7 @@ ___
   <summary>Answer</summary>
   <b>RMCTF{}</b>
   <br><br>
-
+</details>
 ___
 
 # Forensics
