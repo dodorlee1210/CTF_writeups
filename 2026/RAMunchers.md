@@ -1,4 +1,6 @@
-# OSINT
+<details>
+  <summary><h1>OSINT</h1></summary>
+  
 There were 5 challenges in total. I was able to solve 4.
 
 ## Data Centre Hijack
@@ -93,5 +95,8 @@ ___
   <br><br>
 </details>
 ___
+</details>
 
-# Forensics
+<details>
+  <summary><h1>Forensics</h1></summary>
+</details>
