@@ -99,4 +99,41 @@ ___
 
 <details>
   <summary><h1>Forensics</h1></summary>
+
+## C2 No Evil
+> Employees of steelsecure's rival company, safeguard, have recently alerted us to a potential incident. They've handed us a .pcap of traffic captured from what they suspect to be an infected machine, analyse it and see if you can find how they avoided detection.
+> <br> challenge.pcap
+### Solution
+* Opened challenge.pcap on Wireshark.
+    * Statistics => Protocol Hierarchy showed most traffic for DNS.
+    * Looked at http traffic just in case, but found nothing suspicious.
+* Filtered capture by DNS.
+    * Saw there were weird urls ending with "telemetry-cdn."
+    * Filtered again by "dns.qry.name cocntains "telemetry-cdn" and found 3 unique payloads.
+       1) 00-kjau26zrg42v6tbrkqzv
+       2) 01-eqkmjrmv6nbrk42fsnk7
+       3) 02-irhdk7i
+* The payloads has no symbols, so it is likely that it is encoded in Base-32. However, DNS is case insensitive for ASCII characters.
+* Therefore, I pasted all the payloads on CyberChef and applied:
+    1) To Upper
+    2) From Base-32
+### Flag
+<details>
+  <summary>Answer</summary>
+  <b>RAM{175_L1T3RALLY_41W4Y5_DN5}</b>
+</details>
+
+___
+
+## Pixel Perfect
+> Recently, many of these weird .jpgs have been popping up in the office. We don't know what they're for, but we suspect it's a means of data exfiltration. See if you can get anything out of it for us.
+### Solution
+* 
+### Flag
+<details>
+  <summary>Answer</summary>
+  <b>RMCTF{}</b>
+  <br><br>
+</details>
+___
 </details>
