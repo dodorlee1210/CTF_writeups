@@ -13,7 +13,7 @@ I enjoyed these challenges quite a lot, because they were somehow related to eac
 ### Observation
 * The link was an article posted by Zoox on its partnership with Resorts World Las Vegas.
 * The image was a picture of an entrance driveway.
-### Solve
+### Solution
 1) I searched "Resorts World Las Vegas" on Google Maps; however, street view was limited to 2 entrance driveways.
 <br>- I followed the street views for both driveways, but none of them had the same component as the image (a grey bar touching the pillars).
 
@@ -56,7 +56,7 @@ ___
 <br> Example: flag{Corolla_ABCDEFG0123}
 ### Observation
 * 2024, automated driving system, harsh braking increases risk of collisions
-### Solve
+### Solution
 * I searched "2024 automated driving system unnecessarily harsh braking collision incident investigation" on Google. This prompt showed very recent incidents or investigations (2025-2026).
 * I prompted Gemini with the challenge description. The response gave me useful info:
   * Zoox Automated Driving System (ADS)
@@ -67,7 +67,7 @@ ___
         * I read the SGO files listed in the PE24015 file. I also looked into Toyota Highlander recalls in 2024 in the official NHSTA website. No VIN numbers were to be found. **Dead-End**
 * Reading over the challenge again, I realized it was pointing to a specific case.
   * I started searching for the 2 incidents mentioned the PE24015 file: "Toyota zoox rear-end collision"
-  * I found a reddit post with information on where one of the cases happened (= Menlo Park) and a link to its incident report, but I found no VIN.
+  * I found a reddit post with information on where one of the cases happened (= Menlo Park) and a link to its incident report, but found no VIN.
        * https://www.reddit.com/r/SelfDrivingCars/comments/xb6766/zoox_had_an_injury_crash_in_menlo_park_on_august/
        * https://www.dmv.ca.gov/portal/file/zoox_082322-pdf/
   * I thought if I searched with more detailed context, more information may exist: "menlo park toyota zoox rear-end crash"
@@ -92,9 +92,9 @@ ___
 ### Observation
 * Video posted by Toyota
 * Title has "in Japan" + heliport identifier's JP
-### Solve
+### Solution
 * I searched "joby first flight location," but showed California or international locations.
-* Tried specifying country by searching"joby first flight location japan" and found an article: https://www.santacruzworks.org/news/jobyfirstflightjapan
+* Tried specifying country by searching "joby first flight location japan" and found an article: https://www.santacruzworks.org/news/jobyfirstflightjapan
     * The link contained info on where the flight took place: "... took placce at Toyota Higashi-Fuji Technical Center at Shizuoka, Japan"
 * Searched "Toyota Technical Center Higashi-Fuji" on ourairports, but yielded no results. Re-searched as "Higashi-Fuji Technical Center" which gave one heliport.
 ### Flag
@@ -111,7 +111,7 @@ ___
 ### Observation
 * Joby's final international flight of 2025.
 * Challenge wants the way id of where the aircraft took off and landed.
-### Solve
+### Solution
 *  I searched "joby last flight" and found an article that stated it took place on **Fuji Speedway**.
 *  Hoping for a video, like the challenge above, I searched "joby's last flight," then "joby's last flight fuji speedway."
     * Found a video: [The Future of Flight is Here | Joby Flies at Mt. Fuji
