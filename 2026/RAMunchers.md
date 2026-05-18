@@ -5,7 +5,7 @@ There were 5 challenges in total. I was able to solve 4.
 
 ## Data Centre Hijack
 > Gibson has attacked one of the Data Center’s of a significant company. Before their server was hijacked, the employees managed to send a drone picture of the building. Your job is to identify the location of this data server and the company that owns it. The flag is in format: RMCTF{City-Country-Company}
-<img width="1000" height="416" src="https://github.com/user-attachments/assets/5dd5f30e-7b95-4a9a-99bb-4b0c17060853" />
+<img width="500" height="208" src="https://github.com/user-attachments/assets/5dd5f30e-7b95-4a9a-99bb-4b0c17060853" />
 
 ### Observation
 * Very green, numerous solar panels, curved road
