@@ -6,7 +6,7 @@ A collection of walkthroughs and solutions for Capture The Flag competitions, fo
 ### JAN
 * [UofT](./)
 ### MAY
-| [THCon](./) | [RAMunchers](2026/RAMunchers.md) | [NDIAS](2026/NDIAS.md) |
+| [THCon](2026/THCon.md) | [RAMunchers](2026/RAMunchers.md) | [NDIAS](2026/NDIAS.md) |
 | ----------- | -------------------------------- | ---------------------- |
 
 * [misc](./)
