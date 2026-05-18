@@ -37,7 +37,7 @@ ___
 * US Department of Transportation, Investigation PE26001
 * Subject: Waymo AV striking a child in the area of a school
 * Summary: ... within 2 blocks of a Santa Monica, CA elementary school
-### Solve
+### Solution
 * I searched "waymo av santa monica elementary" based on the observed data. Resulting AI overview said it was "reported as Grant Elementary."
 * Now that I have a specific school name and region, I searched "grant elementary santa monica" on Google Maps, which gave me 1 location.
 * The pin was actually placed right in front of the crosswalk, so I right-cliked for coordinates.
