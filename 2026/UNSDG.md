@@ -125,7 +125,7 @@ A 2030-Agenda commitment file was encoded three times by an over-eager archivist
 * Result: DIGNITY OF ALL HUMAN BEINGS IS FOUNDATIONAL. WE PLEDGE THAT NO ONE WILL BE LEFT BEHIND. STAGE3HEX: 1a295f35bcafb4fd1a5b5b29a1beb0e41a5b4e3ea3a9a7fd065b583ea7ccb4e5135b4e34babcb9ec7f3e4834a7b5a2e11a295b51b7b5d5fd08343e25bda3a0fa1e355a51a1a4bcfb0b223051a5bebae619413e44c08f91cf69497b47c3d9cc9d391e2e1493d4c49f3918781491da90cf3a187c
 
 **STAGE 3**
-* This part took a long time, because I had no idea how to find the key for XOR. I saw the hint which said the key was the first 8 bytes of the hash of a verb already given in the cleartext.
+* This part took a long time, because I wasn't sure how to find the key for XOR. I saw the hint which said the key was the first 8 bytes of the hash of a verb already given in the cleartext.
 * I tried MD5, SHA1, SHA256 hashes of verbs such as "pledge, left, remains, ending, and facing" as keys on CyberChef. NONE worked.
 * I decided do use dcode.fr/xor-cipher to bruteforce it since CyberChef was going to take an awful long time. (Next time, I'll do this first...)
 * For the decryption method, I selected knowing the key size (in bytes) and input 8. As soon as I hit decrypt, the correct answer showed up.
