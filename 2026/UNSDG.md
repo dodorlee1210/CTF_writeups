@@ -2,11 +2,17 @@
 > A community mapping NGO published an aerial photograph of an informal settlement as part of an SDG 1 housing survey. The image was released publicly without a thorough review. Standard image viewers show nothing unusual. Not every tool that reads a file is an image viewer.
 
 ### Solution
-*
+* The artifact was a photo: Slum_Survey_Photo.png
+<br>`exiftool Slum_Survey_Photo.png`<br>
+`...`<br>
+`Warning   : [minor] Trailer data after PNG IEND chunk`
+* from 0xV01D CTF I know the IEND signature is: 00 00 00 00 49 45 4E 44 AE 42 60 82
+* Created extract.py where I opened the png in 'rb' mode and located the beginning index of the trailer data (= the end of the IEND chunk) to write it out to a file.
+* The trailer data was the flag.
 ### Flag
 <details>
   <summary>Answer</summary>
-  <b>flag</b>
+  <b>SDG{6402be9d23bd6997ba5abbd00428cc19}</b>
 </details>
 
 ___
@@ -21,11 +27,12 @@ Find the receipt whose note carries the ADMIN_AUDIT_TOKEN. There are 100 receipt
 KivaConnect's donor portal lets a logged-in donor pull receipts by ID. The ID column is sequential; nothing in the API checks who issued which receipt. A naive enumeration finds the audit token.
 
 ### Solution
-*
+* For this, I checked each id until I hit the one that showed me the token. I'm not really sure if there was a way I could have done it faster.
+* I think it worked because the id = 18 when the site auto loaded the token, not too long before I started typing in all the ids.
 ### Flag
 <details>
   <summary>Answer</summary>
-  <b>flag</b>
+  <b>SDG{c2c012f506d451318ff1cf2eefe4af0e}</b>
 </details>
 
 ___
@@ -40,11 +47,12 @@ Authenticate as the admin and read the disbursement integrity token from the das
 WelfareNet routes every login through a query the team wrote by hand against an in-memory roster. A penetration-test report flagged the login form last quarter — it has not been fixed.
 
 ### Solution
-*
+* 
 ### Flag
 <details>
   <summary>Answer</summary>
-  <b>flag</b>
+  <b>SDG{}</b>
+
 </details>
 
 ___
@@ -53,12 +61,14 @@ ___
 > A whistleblower forwarded a packet capture taken from inside a national welfare payments gateway. The message broker handling disbursement traffic was running without encryption. Most of the traffic is routine operational chatter. One message published to the administrative channel carries something it should not. You will receive a .pcap file. A packet analyser such as Wireshark is a good place to start.
 
 ### Solution
-*
+* The pcap artifact contained transactions (welfare payments) and 3 audits that were different from all other packets.
+* I used CyberChef to decode all three from hex and then base 64, and it turned out that the flag was hidden in the middle one.
 ### Flag
 <details>
   <summary>Answer</summary>
-  <b>flag</b>
-</details>
+  <b>SDG{06fe3b28c20af240faffa3f976ee7a97}</b>
+  
+  <br><img width="478" height="277" src="https://github.com/user-attachments/assets/ea47496e-f6cb-4b3d-9057-40cd8964fa55" /></details>
 
 ___
 
