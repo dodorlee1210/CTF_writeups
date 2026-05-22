@@ -6,7 +6,8 @@
 <br>`exiftool Slum_Survey_Photo.png`<br>
 `...`<br>
 `Warning   : [minor] Trailer data after PNG IEND chunk`
-* from 0xV01D CTF I know the IEND signature is: 00 00 00 00 49 45 4E 44 AE 42 60 82
+* I know the IEND signature is: 00 00 00 00 49 45 4E 44 AE 42 60 82
+    * A similar challenge existed in 0xV01D CTF.
 * Created extract.py where I opened the png in 'rb' mode and located the beginning index of the trailer data (= the end of the IEND chunk) to write it out to a file.
 * The trailer data was the flag.
 ### Flag
@@ -82,7 +83,7 @@ Submit a tour of all 25 villages (returning to the depot) whose total distance i
 The depot disburses cash to 25 villages each cycle. Edge costs are Euclidean over the published coordinates. The threshold is pegged about 10% above the nearest-neighbour heuristic; a single pass clears it.
 
 ### Solution
-*
+* This
 ### Flag
 <details>
   <summary>Answer</summary>
@@ -119,12 +120,48 @@ Geolocate three EXIF-stripped photos to within 5 km of the reference point.
 **Description** <br> 
 A community mapping NGO published three aerial photos of informal settlements. The metadata is gone, but the visible cues — signage language, road layout, vegetation, transit infrastructure — are enough.
 
+**Given Context** <br>
+**A:**
+* Dense low-rise rooftops crowding a peninsular landform.
+* Signage in Devanagari script alongside English on a small storefront.
+* A wide saltwater inlet borders the western edge; a major rail bridge runs north–south on the east.
+* Monsoon-belt vegetation; tropical climate.
+
+**B:**
+* Hilly East African terrain with deep red-brown soil between corrugated-iron rooftops.
+* Signage in Swahili and English. One advertisement reads Maziwa Fresh.
+* A single-track railway line cuts diagonally across the settlement, fenced on both sides.
+* Acacia and jacaranda trees scattered through the upper slopes.
+
+**C:**
+* Hillside favela facing the South Atlantic; rooftops stacked vertically up a steep ridgeline.
+* Portuguese signage; one mural reads PAZ NA COMUNIDADE.
+* A multi-lane elevated highway threads along the foot of the hill.
+* Beach umbrellas visible in the distance to the east.
+### Opinion
+I was perplexed with the point of this challenge as I couldn't find the exact coordinates with the visible cues provided. I am guessing this was more about a region that specific places, since it accepted coordinates of sites that are within 5 km of the referene centroids?
+* Was this to illustrate that informal urban settlements are hard to find...?
+
+For Photo B, I even took the time to locate the exact coordinates (where distances_km = 0) and searched it up on Google Maps which didn't support street view. I viewed the street right beside it, but I saw no signage or advertisement that reads "Maziwa Fresh."
+* The only one that I could "see" was the first cue that stated "deep red-brown soil between corrugated-iron rooftops"
+* Even considering that this was supposed to locate "slums," it was weird because Google Maps showed a region with different coordinates for the actual [Kiberia Slum](https://www.google.com/maps/place/Kibera+slum,+Nairobi,+Kenya/@-1.3143716,36.7910483,14z/data=!3m1!4b1!4m6!3m5!1s0x182f107c96b535fb:0xfe6eeeb2de675724!8m2!3d-1.3122173!4d36.7913757!16s%2Fg%2F1vx70tps?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D).
 ### Solution
-*
+* The visible cue sentences were not "copy-able" and a part of Photo A was cut off due to no line wrap.
+* I opened the provided images in another tab and copied & pasted the texts into Gemini to find the general regions.
+* For Photo A, Gemini gave me Churchgate in India.
+    * The area was quite populated with dense low-rise rootftops. I tried to find a land mass with saltwater borders on the west with a major rail bridge on the east, but every coordinate I found did not get significantly closer to the centroid.
+    * I continuously modified coordinates to derease distances_km, and got down to 1.81, but I was so lost by then. I looked it up on Google Maps, and it was at a foresty swamp place. I tried inputting some viable ones near the low-rise rooftops, but all of them ended up increasing the distance to the centroid.
+    * Final Answer: 19.0531, 72.8599
+* For Photo B, Gemini gave me Kiberia in Nairobi.
+    * I took some time to find the exact coordinates the website wanted by entering numbers and checking if the distances_kim had decreased
+    * Final Answer: -1.3133, 36.7891
+* For Photo C, Gemini gve me Rocinha in Rio de Janeiro.
+    * I checked its Google Maps coordinates, and it was within 0.26 km.
+    * Final Answer: -22.9879, -43.2479
 ### Flag
 <details>
   <summary>Answer</summary>
-  <b>flag</b>
+  <b>SDG{a416253846fac9d163ee9701f979c59c}</b>
 </details>
 
 ___
