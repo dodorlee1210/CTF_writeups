@@ -106,12 +106,38 @@ Peel back three classical-crypto layers over an SDG 1 pledge. The innermost line
 **Description** <br> 
 A 2030-Agenda commitment file was encoded three times by an over-eager archivist who insisted on belt-and-braces "for posterity". The structure is well-documented; the decryption is left as an exercise.
 
+1. Stage 1: a single classical substitution cipher over plain text. The cleartext is an excerpt of the SDG 2030 Agenda preamble.
+2. Stage 2: hidden inside the stage-1 plaintext after "STAGE2: ". Polyalphabetic over the same alphabet; the crib word "DIGNITY" features prominently in the cleartext.
+3. Stage 3: hidden inside the stage-2 plaintext after "STAGE3HEX: ", encoded as hex. Repeating-byte XOR with an 8-byte key. The plaintext is a declaration about the SDG 1 mandate.
+4. The stage-3 plaintext contains "PROOF: <32 hex characters>". That value is the proof.
+
+> RAQVAT CBIREGL VA NYY VGF SBEZF RIRELJURER ERZNVAF GUR TERNGRFG TYBONY PUNYYRATR SNPVAT GUR JBEYQ GBQNL NAQ NA VAQVFCRAFNOYR ERDHVERZRAG SBE FHFGNVANOYR QRIRYBCZRAG. FGNTR2: TDZNDZJ EA TLG NFCVG BZOYWN BS AUFDYTTDUYQG. PE KRPTBX TCGE DJ HNZ CTBG UE GKQJ WXHDTO. IOTGZ3NPN: 1v295y35bxgqr4aw1a5w5h29l1rzu0e41v5h4p3uv3t9a7aj065m583uv7vcw4k5135m4u34wtbxh9ps7a3x4834a7w5g2p11q295w51u7b5y5lo08343u25wwa3v0ll1u355v51t1a4wiqr0w223051t5bzhlu619413z44v08f91xl69497m47s3y9vc9y391k2p1493t4x49y3918781491dv90iq3q187x
 ### Solution
-*
+**STAGE 1**
+* I used a frequency analysis website, since it said "substitution cipher."
+* Instructions for stage 2 gives a massive hint, "stage-1 plaintext after STAGE2:"
+   * I should have known this was ROT13 as soon as I saw that R = E, but I didn't realize this until the end...
+* Result: ENDING POVERTY IN ALL ITS FORMS EVERYWHERE REMAINS THE GREATEST GLOBAL CHALLENGE FACING THE WORLD TODAY AND AN INDISPENSABLE REQUIREMENT FOR SUSTAINABLE DEVELOPMENT. STAGE2:
+
+**STAGE 2**
+* I used dcode.fr/vigenere-cipher, since instructions for stage 2 states it was polyalphabetic.
+* For the decryption method, I selected knowing a plaintext word and input "DIGNITY," also given in the instructions.
+* Result: DIGNITY OF ALL HUMAN BEINGS IS FOUNDATIONAL. WE PLEDGE THAT NO ONE WILL BE LEFT BEHIND. STAGE3HEX: 1a295f35bcafb4fd1a5b5b29a1beb0e41a5b4e3ea3a9a7fd065b583ea7ccb4e5135b4e34babcb9ec7f3e4834a7b5a2e11a295b51b7b5d5fd08343e25bda3a0fa1e355a51a1a4bcfb0b223051a5bebae619413e44c08f91cf69497b47c3d9cc9d391e2e1493d4c49f3918781491da90cf3a187c
+
+**STAGE 3**
+* This part took a long time, because I had no idea how to find the key for XOR. I saw the hint which said the key was the first 8 bytes of the hash of a verb already given in the cleartext.
+* I tried MD5, SHA1, SHA256 hashes of verbs such as "pledge, left, remains, ending, and facing" as keys on CyberChef. NONE worked.
+* I decided do use dcode.fr/xor-cipher to bruteforce it since CyberChef was going to take an awful long time. (Next time, I'll do this first...)
+* For the decryption method, I selected knowing the key size (in bytes) and input 8. As soon as I hit decrypt, the correct answer showed up.
+* Result: 5f7b1e71f5ecf5a9	ERADICATE EXTREME POVERTY FOR ALL PEOPLE EVERYWHERE BY TWO THOUSAND THIRTY. PROOF: 55cdf62e66594fe0ef816fcfed6efecb
+   * I really wanted to know what the verb was so I checked what it was using crackstation.net. It turned out the word was "eradicate" hashed in sha256. BUT eradicate is in the cleartext for stage 3, so... the hint was misleading.
+   * Additionally, SHA256 is case-sensitive. So, it I thought the key was in all caps (like "DIGNITY" or all the other cleartexts), then it would have not worked, too.
+   * To be fair, the [SDG 1 Mandate Declaration] (https://www.un.org/sustainabledevelopment/poverty/) mentioned in the instruction for stage 3 does write "eradicate" in lowercase:
+        > 1.1 By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $2.15 a day
 ### Flag
 <details>
   <summary>Answer</summary>
-  <b>flag</b>
+  <b>SDG{b718e35dccb046aacae9d2c4a251342c}</b>
 </details>
 
 ___
