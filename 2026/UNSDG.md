@@ -1,3 +1,8 @@
+# UN SDG May 2026
+This CTF was hosted by "Hack for a Change" team. It seemed to aim to train than test participatns in cybersecurity. None of the challenges were categorized (although the descriptions and artifacts made them explicit). It wasn't really capture the flag, but capture the logic to extract useful information. The flag was just given once the user typed in the required information and clicked on the "extract flag" button. Most of the challenges also "auto-extracted" the required info (e.g. authentication token, hash, etc.) once the user reached it, so there really wasn't much work to be done on that side.
+
+One feature I would want them to add is theme toggles: light mode. The text was so hard for me to read that I had to print the website and read the light mode ver pdf to see certain placeholders or instructions.
+
 ## Slum Survey Photo
 > A community mapping NGO published an aerial photograph of an informal settlement as part of an SDG 1 housing survey. The image was released publicly without a thorough review. Standard image viewers show nothing unusual. Not every tool that reads a file is an image viewer.
 
