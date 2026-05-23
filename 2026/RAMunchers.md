@@ -44,9 +44,18 @@ ___
 ## Gibson makes a Mistake
 > Gibson has disabled the employee account and is posting fake pictures of themselves at the AI-IM global summit 2026 - but they have made mistakes in each image of their event post leaving clues to their real location. Your job is to identify the country and region they are based in. The flag is in the format: RMCTF{Region-Country}
 ### Observation
-*
+* The hotel post in the account Gibson made had two pictures:
+    * Hotel image: French flag on the boat with Hyatt Regency hotel.
+    * Car image: license plate has unique arrangment of letters and a cross like symbol.
 ### Solution
-* 
+* I searched up French license plates and found out the symbol represented regional departments.
+* The one that looked similar was given codes 74 or 75 on Wikipedia.
+    * https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_France
+    * https://en.wikipedia.org/wiki/Departments_of_France#Current_departments
+* The problem is that the flag placeholder said "region" instead of departments.
+* Both codes pointed to "the region of Savoy" and these departments (and another two) were included "in Auvergne-Rhône-Alpes."
+* It took me a while to figure out that the flag actually required the department name (Haute-Savoie).
+   * In France, departments are subdivisions within regions, in my opinion, the wording was confusing. It would have been better if the flag format was area-country or department-country (although this may give the answer away).
 ### Flag
 <details>
   <summary>Answer</summary>
