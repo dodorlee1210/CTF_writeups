@@ -53,13 +53,11 @@ ___
 
 ### Solution
 * I searched up French license plates and found out the symbol represented regional departments.
-* The one that looked similar was given codes 73 or 74 on Wikipedia.
     * https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_France
     * https://en.wikipedia.org/wiki/Departments_of_France#Current_departments
-* The problem is that the flag placeholder said "region" instead of departments.
-* Both codes pointed to "the region of Savoy" and these departments (and another two) were included "in Auvergne-Rhône-Alpes."
+* The problem was that the flag placeholder said "region" instead of departments.
+* Code 74 pointed to "the region of Savoy" and "Auvergne-Rhône-Alpes."
 * It took me a while to figure out that the flag actually required the department name (Haute-Savoie).
-   * https://www.cactus2000.de/uk/plate/france.php
    * In France, departments are subdivisions within regions, in my opinion, the wording was confusing. It would have been better if the flag format was area-country or department-country (although this may give the answer away).
 ### Flag
 <details>
