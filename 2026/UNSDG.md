@@ -54,12 +54,25 @@ WelfareNet routes every login through a query the team wrote by hand against an 
 
 ### Solution
 > <img width="829" height="438" src="https://github.com/user-attachments/assets/cf4c40bc-28cb-4f6d-8c9e-82c10fc2f287" />
-* After seeing that the username and password was concatenated 
+* After seeing that the challenge provided two input fields (username and password), I had a feeling it was going to be sqli or some kind of script exploitation.
+* I tried "signing in" with a basic sqli payload on the username input field: ' OR '1'='1;--
+    * This returned:
+      > { "ok": true, "message": "Welcome, alice.kone.", <br> "session": { "user_id": 100, "username": "alice.kone", "role": "caseworker", "api_token": null }, <br>"next": "No admin privileges; only the admin dashboard exposes the disbursement integrity token." }
+* Since I didn't know how the query was constructed I tried extracting the list stored for objects, but the system limited the output to 1 account.
+* So I had to try find a way to a or the admin account. This was easier than I thought beacuse I just entered:
+    * ' OR role='admin'; --
+      > <img width="679" height="398" src="https://github.com/user-attachments/assets/a86df055-d5c8-4848-9066-a75964936af3" />
+* I was able to open the Admin Dashboard with the api_token shown in the picture above.
+   > <img width="804" height="481" src="https://github.com/user-attachments/assets/b7466755-30f9-4150-9802-656a217ec891" />
+### What I Learned
+* For other challenges that require access to admin, I should try:
+    * id = 0 or 1
+    * role = admin
+    * username = admin     
 ### Flag
 <details>
   <summary>Answer</summary>
-  <b>SDG{c2c012f506d451318ff1cf2eefe4af0e}</b>
-
+  <b>SDG{06fe3b28c20af240faffa3f976ee7a97}</b>
 </details>
 
 ___
@@ -73,7 +86,7 @@ ___
 ### Flag
 <details>
   <summary>Answer</summary>
-  <b>SDG{06fe3b28c20af240faffa3f976ee7a97}</b>
+  <b>SDG{170f6727218d4811aa72324a8113e95d}</b>
   
   <br><img width="478" height="277" src="https://github.com/user-attachments/assets/ea47496e-f6cb-4b3d-9057-40cd8964fa55" /></details>
 
