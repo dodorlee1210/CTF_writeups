@@ -53,11 +53,12 @@ Authenticate as the admin and read the disbursement integrity token from the das
 WelfareNet routes every login through a query the team wrote by hand against an in-memory roster. A penetration-test report flagged the login form last quarter — it has not been fixed.
 
 ### Solution
-* 
+> <img width="829" height="438" src="https://github.com/user-attachments/assets/cf4c40bc-28cb-4f6d-8c9e-82c10fc2f287" />
+* After seeing that the username and password was concatenated 
 ### Flag
 <details>
   <summary>Answer</summary>
-  <b>SDG{}</b>
+  <b>SDG{c2c012f506d451318ff1cf2eefe4af0e}</b>
 
 </details>
 
