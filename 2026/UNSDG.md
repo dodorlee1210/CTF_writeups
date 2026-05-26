@@ -146,7 +146,7 @@ A 2030-Agenda commitment file was encoded three times by an over-eager archivist
 * Result: 5f7b1e71f5ecf5a9	ERADICATE EXTREME POVERTY FOR ALL PEOPLE EVERYWHERE BY TWO THOUSAND THIRTY. PROOF: 55cdf62e66594fe0ef816fcfed6efecb
    * I really wanted to know what the verb was so I checked what it was using crackstation.net. It turned out the word was "eradicate" hashed in sha256. BUT eradicate is in the cleartext for stage 3, so... the hint was misleading.
    * Additionally, SHA256 is case-sensitive. So, if I thought the key was in all caps (like "DIGNITY" or all the other cleartexts), then it also would have not worked, too.
-   * To be fair, the [SDG 1 Mandate Declaration] (https://www.un.org/sustainabledevelopment/poverty/) mentioned in the instruction for stage 3 does write "eradicate" in lowercase:
+   * To be fair, the [SDG 1 Mandate Declaration](https://www.un.org/sustainabledevelopment/poverty/) mentioned in the instruction for stage 3 does write "eradicate" in lowercase:
         > 1.1 By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $2.15 a day
 ### Flag
 <details>
