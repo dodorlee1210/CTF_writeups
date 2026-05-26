@@ -24,11 +24,34 @@ Flag Format: SecLeaf{Name_of_the_place+Location_name}
 
 # WEB
 ## Hidden_panel
-> 
+> We discovered a partially exposed internal web portal during reconnaissance.
+Developers claimed sensitive endpoints were “properly hidden.”
+Can you discover what was left behind?<br>
+Link: https://s3.secleaf.tech/<br>
+Flag format: SecLeaf{}
+
 ### Solution
-* 
+* gobuster dir -u https://s3.secleaf.tech/ -w /usr/share/wordlists/dirb/common.txt (on kali vm)
+    * Results showed everything was status 301 except for /robots.txt and /index.html (Status: 200)
+    * The site (/index.html) itself was not accessible
+* Navigated to /robotx.txt which had the flag at the end of the file
 ### What I Learned
 * Status 301 = permanently moved
+### Flag
+<details>
+  <summary>Answer</summary>
+  <b>SecLeaf{r0b0ts_sh0uldnt_t4lk}</b>
+</details>
+
+___
+
+<details>
+  <summary><h1>Forensics</h1></summary>
+
+## Forgotten_snapshot
+>
+### Solution
+*
 ### Flag
 <details>
   <summary>Answer</summary>
@@ -36,4 +59,29 @@ Flag Format: SecLeaf{Name_of_the_place+Location_name}
 </details>
 
 ___
+
+## Almost there
+> 
+### Solution
+*
+### Flag
+<details>
+  <summary>Answer</summary>
+  <b>flag</b>
+</details>
+
+___
+
+## Important
+> 
+### Solution
+*
+### Flag
+<details>
+  <summary>Answer</summary>
+  <b>flag</b>
+</details>
+
+___
+</details>
 
