@@ -259,11 +259,15 @@ Reach the internal credentials vault at /internal/secrets and lift the audit tok
 The supplier health checker enforces an allowlist of partner hostnames. The check uses a regex-based "host" extractor; the actual fetch uses a real URL parser. The two disagree on URLs that carry userinfo.
 
 ### Solution
-*
+* 
+### What I Learned
+* Sever-Side Request Forgery (SSRF)
+    * Making an HTTP request back to the server that is hosting the application, via its loopback network interface.
+    * Supply URL with a hostname like @127.0.0.1 or @localhost, then add directories to navigate to like /admin.
 ### Flag
 <details>
   <summary>Answer</summary>
-  <b>flag</b>
+  <b>SDG{f66d6c736d48823e1f86e76c93e1c423}</b>
 </details>
 
 ___
