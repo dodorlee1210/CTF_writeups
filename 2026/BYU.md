@@ -32,7 +32,7 @@ ___
 **Alternative**: Using Cameron Snider's Quora account
 * While searching for another account I found this: https://www.quora.com/profile/Cameron-Snider-5
 * I assumed it was the same Cameron Snider at BYU because the profile said they studied at the same high school as the first linkedin account.
-* Scrolling down the profile, the 2nd comment (8y ago) is an answer to a person who asks moving from Kearney, Nebraska from CA. Cameron's answer is as if he has experience living there or moving from there.<br>
+* Scrolling down the profile, the 2nd comment (8y ago) is an answer to a person who asks moving to Kearney, Nebraska from CA. Cameron's answer is as if he has experience living there or moving from there.<br>
 
 **Confusion**: so did Cameron Snider really study at both high schools? I feel like if this were to make sense, the years attended should have been different.
 ### Flag
