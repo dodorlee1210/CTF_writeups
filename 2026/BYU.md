@@ -60,14 +60,14 @@ ___
 
 ___
 
-## Where in the World is Scott Dourque
+## Where in the World is Scott Dourque $\color{red}{\text{(SOLVED AFTER CTF ENDED)}}$
 > We've been tracking international criminal Scott Dourque for months. Hes wanted on hundreds of counts of fraud for telling single mothers that he is the father of their baby and he needs "Father Support" money. We've built out a full portfolio on Scott, but we can't get a warrant for his arrest until we know exactly where he was, and what he was doing on April 12th, 2026. Maybe you can figure out where he was?
 ### Solution
-*
+* 
 ### Flag
 <details>
   <summary>Answer</summary>
-  <b>flag</b>
+  <b>byuctf{st00pid_ass1stant}</b>
 </details>
 
 ___
