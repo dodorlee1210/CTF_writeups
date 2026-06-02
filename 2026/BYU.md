@@ -63,7 +63,16 @@ ___
 ## Where in the World is Scott Dourque $\color{red}{\text{(SOLVED AFTER CTF ENDED)}}$
 > We've been tracking international criminal Scott Dourque for months. Hes wanted on hundreds of counts of fraud for telling single mothers that he is the father of their baby and he needs "Father Support" money. We've built out a full portfolio on Scott, but we can't get a warrant for his arrest until we know exactly where he was, and what he was doing on April 12th, 2026. Maybe you can figure out where he was?
 ### Solution
-* 
+* I found the Instagram account of Scott Dourque ([scott_dourque](https://www.instagram.com/scott_dourque)) through a Google search.
+* Looking through the posts, I could see he really loved Olive Garden. Then, I found one that he explicitly wrote "April 12th, 2026."
+    * I first took a screenshot of the picture and searched in online, hoping to find a matching Olive Garden interior pic, but failed.
+    * I tried again with the interior design, focusing on matching the brick arch shapes and the textile on the bench Scott was sitting on but failed.
+* I looked through the post again, and I saw the plane pic with a clear identification code on it.
+    * At first, I saw the post date, dated on May 16th, 2026, so I didn't think this was relevant. However, the big "N8GQ" on the plane just felt like a hint.
+    * I searched N8GQ April 12th, and FlightAware (website for flight tracking logs) showed up. I had to sign up to see the past 3 months worht of logs, so I signed up through mobile (wouldn't let me signup just by laptop browser...).
+    * On April 12th, there were 2 travel logs: KLAS => KAUS; KAUS => KAPA
+    * I searched on Google Maps for Olive Gardens in each area (near the airports which the codes refer to). For each location, I looked through the reviews sorted by newest until 2 months back, but couldn't find anything. I still don't get why I couldn't see it as this was the right way to find it... ;_;
+* I found the flag after the ctf ended...
 ### Flag
 <details>
   <summary>Answer</summary>
