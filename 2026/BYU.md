@@ -81,3 +81,10 @@ ___
 
 ___
 
+# Forensics
+## There Will Be Cake
+## Are You Still There
+## Alright Paradox Time
+## Are You Still There $\color{red}{\text{(TRIED AFTER CTF ENDED)}}$
+
+
