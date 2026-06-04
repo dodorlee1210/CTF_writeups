@@ -69,7 +69,7 @@ ___
 * Looking through the posts, I could see he really loved Olive Garden. Then, I found one that he explicitly wrote "April 12th, 2026."
     * I first took a screenshot of the picture and searched in online, hoping to find a matching Olive Garden interior pic, but failed.
     * I tried again with the interior design, focusing on matching the brick arch shapes and the textile on the bench Scott was sitting on but failed.
-* I looked through the post again, and I saw the plane pic with a clear identification code on it.
+* I looked through the post again, and I saw the plane picture with a clear identification code on it.
     * At first, I saw the post date, dated on May 16th, 2026, so I didn't think this was relevant. However, the big "N8GQ" on the plane just felt like a hint.
     * I searched N8GQ April 12th, and FlightAware (website for flight tracking logs) showed up. I had to sign up to see the past 3 months worht of logs, so I signed up through mobile (wouldn't let me signup just by laptop browser...).
     * On April 12th, there were 2 travel logs: KLAS => KAUS; KAUS => KAPA
@@ -116,7 +116,7 @@ Hint: how would you remotely check if a server is online?
 ### Solution
 **Opinion**: I liked this one as well because the message is funny (all the ps'es and final thoughts) trying to show how we can ping a server remotely multiple times (obsessive XD) to check if it's alive. 
 * In the same file as the first challenge, I looked at all the pings using icmp protocol by filtering it.
-* Each ping is a pair: first request, server response/reply.
+* Each ping is a pair: first request, then server response/reply.
 * The data at the very end of the packet contained 4 ASCII letters that were a part of the flag, so I combined them.
 * I solved it manually this time, but like suggested on the write up by BYUCTF, maybe I'll try writing a script next time.
 ### Flag
