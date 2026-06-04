@@ -1,4 +1,6 @@
-# OSINT
+<details>
+  <summary><h1>OSINT</h1></summary>
+   
 ## Questionable Trip
 > Every summer, BYU student LegoClones takes a trip somewhere in the world, for absolutely zero reason at all. Can you find where he took this picture?
 > Flag Format: byuctf{} Example: byuctf{Costa_Coffee}
@@ -81,10 +83,78 @@ ___
 
 ___
 
+</details>
+
 # Forensics
+* Same pcap file for all challenges
 ## There Will Be Cake
+> The Enrichment Center is required to remind you that all test subject activity will be logged, analyzed, and stored for scientific purposes.<br>
+> "Cake and grief counseling will be available at the conclusion of the test." <br>
+> Hint: what is a baked treat similar to a cake that you can find on almost any website?
+### Solution
+**Opinion**: I liked this one because of the wordplay, cake => cookie. Session cookies are created or "baked" almost on any website.
+* I opened the file using WireShark. There weren't a lot of packets, but there were a variety. I looked for HTTP and TCP.
+* Following the TCP route, I found the cookie "cake=<base64 encoded string>" then used CyberChef to decode it for the flag.
+### Flag
+<details>
+  <summary>Answer</summary>
+  <b>byuctf{Th3_C4k3_!s_4_L!3_HTC56zeE}</b>
+</details>
+
+___
+
 ## Are You Still There
+> Forms FORM-55551-6: Personnel File Addendum Addendum:
+One last thing:
+Go ahead and leave me. I think I prefer to stay inside. Maybe you'll find someone else to help you. Maybe Black Mesa... THAT WAS A JOKE. HA HA. FAT CHANCE. Anyway, this cake is great. It's so delicious and moist. Look at me still talking when there's Science to do. When I look out there, it makes me GLaD I'm not you. I've experiments to run. There is research to be done. On the people who are still alive.
+PS: And believe me I am still alive. PPS: I'm doing Science and I'm still alive. PPPS: I feel FANTASTIC and I'm still alive.
+FINAL THOUGHT: While you're dying I'll be still alive.
+FINAL THOUGHT PS: And when you're dead I will be still alive.
+STILL ALIVE
+Still alive.
+Hint: how would you remotely check if a server is online?
+### Solution
+**Opinion**: I liked this one as well because the message is funny (all the ps'es and final thoughts) trying to show how we can ping a server remotely multiple times (obsessive XD) to check if it's alive. 
+* In the same file as the first challenge, I looked at all the pings using icmp protocol by filtering it.
+* Each ping is a pair: first request, server response/reply.
+* The data at the very end of the packet contained 4 ASCII letters that were a part of the flag, so I combined them.
+* I solved it manually this time, but like suggested on the write up by BYUCTF, maybe I'll try writing a script next time.
+### Flag
+<details>
+  <summary>Answer</summary>
+  <b>byuctf{Turr3t_R3d3mpt!0n_L!n3s_4r3_N0t_R!d3s}</b>
+</details>
+
+___
+
 ## Alright Paradox Time
+> 
+### Solution
+*
+### Flag
+<details>
+  <summary>Answer</summary>
+  <b>byuctf{S0_My_P4r4d0x_!d34_D!dnt_W0rk}</b>
+</details>
+
+___
+
 ## Are You Still There $\color{red}{\text{(TRIED AFTER CTF ENDED)}}$
+> 
+### Solution
+*
+### Flag
+<details>
+  <summary>Answer</summary>
+  <b>flag</b>
+</details>
+
+___
+
+
+# Git $\color{red}{\text{(AFTER CTF ENDED)}}$
+## Gitastic 1
+## Gitastic 2
+
 
 
