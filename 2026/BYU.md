@@ -115,7 +115,7 @@ Still alive.
 Hint: how would you remotely check if a server is online?
 ### Solution
 **Opinion**: I liked this one as well because the message is funny (all the ps'es and final thoughts) trying to show how we can ping a server remotely multiple times (obsessive XD) to check if it's alive. 
-* In the same file as the first challenge, I looked at all the pings using icmp protocol by filtering it.
+* In the same file as the first challenge, I looked at all the pings by filtering it by icmp.
 * Each ping is a pair: first request, then server response/reply.
 * The data at the very end of the packet contained 4 ASCII letters that were a part of the flag, so I combined them.
 * I solved it manually this time, but like suggested on the write up by BYUCTF, maybe I'll try writing a script next time.
@@ -128,9 +128,11 @@ Hint: how would you remotely check if a server is online?
 ___
 
 ## Alright Paradox Time
-> 
+> To maintain a constant testing cycle, I simulate daylight at all hours and add adrenal vapor to your oxygen supply. So you may be confused about the passage of time. The point is, yesterday was your birthday. I thought you'd want to know. Hint: What protocol is associated with time?
 ### Solution
-*
+* Network Time Protocol (NTP) is used to synchronize clocks of devices to UTC.
+* I filtered the packets by NTP and viewed it. It wasn't very hard to figure out what the flag was because they had a distinct pattern to it.
+* Each had sn "eS" before each ASCII letter that spelled "byuctf{...}"
 ### Flag
 <details>
   <summary>Answer</summary>
@@ -142,7 +144,7 @@ ___
 ## Are You Still There $\color{red}{\text{(TRIED AFTER CTF ENDED)}}$
 > 
 ### Solution
-*
+* 
 ### Flag
 <details>
   <summary>Answer</summary>
