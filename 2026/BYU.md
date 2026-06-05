@@ -141,7 +141,7 @@ ___
 
 ___
 
-## Are You Still There $\color{red}{\text{(TRIED AFTER CTF ENDED)}}$
+## Corrupted Cores $\color{red}{\text{(TRIED AFTER CTF ENDED)}}$
 > 
 ### Solution
 * 
